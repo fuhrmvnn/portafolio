@@ -55,22 +55,22 @@ p {
   transform: translate(-50%, -50%);
   z-index: 9999;
 }
+// Cursor personalizado
 .cursor {
-  width: 10px;
-  height: 10px;
-  background: $color-texto;
+  width: 6px;
+  height: 6px;
+  background: $color-azul; // o el color que prefieras
   border-radius: 50%;
-  transition: transform 0.1s ease, width 0.3s ease, height 0.3s ease, background 0.3s ease;
-  mix-blend-mode: difference;
+  transition: transform 0.1s ease, width 0.3s ease, height 0.3s ease;
+  mix-blend-mode: normal; // quitamos diferencia
 }
 .cursor-follower {
-  width: 36px;
-  height: 36px;
-  border: 1.5px solid $color-texto;
+  width: 28px;
+  height: 28px;
+  border: 1px solid rgba($color-texto, 0.3);
   border-radius: 50%;
-  z-index: 9998;
+  opacity: 0.3;
   transition: transform 0.18s ease, width 0.3s ease, height 0.3s ease, opacity 0.3s ease;
-  opacity: 0.5;
 }
 
 // Animaciones reveal
