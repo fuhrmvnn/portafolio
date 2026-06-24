@@ -65,7 +65,6 @@ body {
   background: #FBFBFF;
   color: #241815;
   overflow-x: hidden;
-  cursor: none;
 }
 
 h1 {
@@ -103,33 +102,6 @@ p {
   line-height: 1.7;
   font-weight: 300;
   color: #021A56;
-}
-
-.cursor,
-.cursor-follower {
-  position: fixed;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-  z-index: 9999;
-}
-
-.cursor {
-  width: 10px;
-  height: 10px;
-  background: #241815;
-  border-radius: 50%;
-  transition: transform 0.1s ease, width 0.3s ease, height 0.3s ease, background 0.3s ease;
-  mix-blend-mode: difference;
-}
-
-.cursor-follower {
-  width: 36px;
-  height: 36px;
-  border: 1.5px solid #241815;
-  border-radius: 50%;
-  z-index: 9998;
-  transition: transform 0.18s ease, width 0.3s ease, height 0.3s ease, opacity 0.3s ease;
-  opacity: 0.5;
 }
 
 .reveal {
@@ -188,7 +160,7 @@ p {
   letter-spacing: 0.08em;
   color: #021A56;
   text-decoration: none;
-  transition: color 0.25s ease;
+  transition: color 0.25s ease, opacity 0.25s ease;
 }
 .nav nav {
   display: flex;
@@ -197,10 +169,26 @@ p {
 .nav nav a {
   padding-bottom: 4px;
   border-bottom: 1px solid transparent;
+  position: relative;
 }
 .nav nav a:hover {
   color: rgba(2, 26, 86, 0.7);
-  border-bottom-color: currentColor;
+}
+.nav nav a {
+  /* línea animada más suave */
+}
+.nav nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 1px;
+  background: currentColor;
+  transition: width 0.25s ease;
+}
+.nav nav a:hover::after {
+  width: 100%;
 }
 
 /* -------------------------------
