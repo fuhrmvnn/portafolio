@@ -65,6 +65,7 @@ body {
   background: #FBFBFF;
   color: #241815;
   overflow-x: hidden;
+  cursor: none;
 }
 
 h1 {
