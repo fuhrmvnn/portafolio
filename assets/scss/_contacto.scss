@@ -17,7 +17,7 @@
   padding-right: 80px;
   display: flex;
   flex-direction: column;
- 
+
   h1 {
     font-size: 72px;
     line-height: 0.92;
@@ -26,7 +26,7 @@
     color: $color-texto;
     margin-bottom: 0;
   }
- 
+
   .contact-divider {
     width: 100%;
     max-width: 600px;
@@ -34,7 +34,7 @@
     background: $color-borde;
     margin: 48px 0 40px;
   }
- 
+
   .contact-email {
     font-size: 22px;
     font-weight: 600;
@@ -42,9 +42,19 @@
     color: $color-texto;
     text-decoration: none;
     @include transition;
- 
+    display: inline-flex;       // para alinear icono y texto
+    align-items: center;        // centra verticalmente
+    gap: 12px;                 // separación entre texto e icono
+
     &:hover {
       color: $color-parrafo;
+    }
+
+    .email-icon {
+      width: 40px;
+      height: auto;
+      display: inline-block;    // para que se comporte como elemento en línea
+      // si quieres subirlo/bajarlo ligeramente, usa vertical-align: middle o margin-top
     }
   }
 }

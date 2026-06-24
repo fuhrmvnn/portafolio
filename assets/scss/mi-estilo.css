@@ -1170,9 +1170,17 @@ footer .footer-btn:hover {
   color: #241815;
   text-decoration: none;
   transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
 }
 .contact-left .contact-email:hover {
   color: #021A56;
+}
+.contact-left .contact-email .email-icon {
+  width: 40px;
+  height: auto;
+  display: inline-block;
 }
 
 .contact-right {
