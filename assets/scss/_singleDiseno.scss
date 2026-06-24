@@ -252,17 +252,23 @@
     margin: 0;
   }
 }
-
-// ── Decisiones (SIN bordes de grid) ──────────────────
+// ── Decisiones (rectángulos con fondo #EAEFF7) ────────
+// ── Decisiones (4 rectángulos con separación) ─────────
 .sd-decisions-grid {
-  // Sin border-top
+  display: flex;                // Aseguramos flex (Bootstrap ya lo hace)
+  flex-wrap: wrap;              // Permitimos wrap
+  gap: 16px;                    // ← SEPARACIÓN entre rectángulos (16px)
+
   .decision-item {
-    padding: 28px 28px 28px 0;
-    // Sin bordes
-    &:nth-child(even) {
-      padding-left: 28px;
-      padding-right: 0;
-    }
+    background-color: #EAEFF7;   // Color de fondo
+    padding: 28px;               // Padding interno uniforme
+    flex: 1 1 calc(50% - 16px); // 2 columnas, restando el gap
+    // Para que en desktop ocupen 2 columnas
+    // En móvil se apilan automáticamente por el wrap
+
+    // Si quieres esquinas redondeadas (opcional):
+    // border-radius: 4px;
+
     .decision-category {
       display: block;
       font-size: 11px;
@@ -272,6 +278,7 @@
       color: $color-muted;
       margin-bottom: 6px;
     }
+
     .decision-title {
       display: block;
       font-size: 13px;
@@ -281,6 +288,7 @@
       color: $color-texto;
       margin-bottom: 10px;
     }
+
     p {
       font-size: 13px;
       line-height: 1.65;
