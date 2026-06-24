@@ -845,6 +845,13 @@ footer .footer-btn:hover {
 .archive-hero {
   padding: 70px 90px 60px;
 }
+.archive-hero .archive-hero-left .archive-hero-icon {
+  width: 40px;
+  height: auto;
+  display: block;
+  margin-bottom: 0.75rem;
+  transform: translateY(-20px);
+}
 .archive-hero .archive-hero-left h1 {
   max-width: 560px;
   line-height: 0.92;

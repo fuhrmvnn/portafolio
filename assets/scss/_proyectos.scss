@@ -10,6 +10,13 @@
   padding: 70px 90px 60px;
 
   .archive-hero-left {
+    .archive-hero-icon {
+      width: 40px;
+      height: auto;
+      display: block;
+      margin-bottom: 0.75rem;
+      transform: translateY(-20px);
+    }
     h1 {
       max-width: 560px;
       line-height: 0.92;
