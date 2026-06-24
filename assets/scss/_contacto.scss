@@ -1,0 +1,229 @@
+@import 'variables';
+@import 'mixins';
+ 
+/* -------------------------------
+   ESTILOS EXCLUSIVOS DE CONTACTO
+-------------------------------- */
+ 
+// ── Hero principal ────────────────────────────────────
+.contact-hero {
+  padding: 70px 90px 0;
+  min-height: calc(100vh - 97px); 
+}
+ 
+// ── Columna izquierda ─────────────────────────────────
+.contact-left {
+  padding-top: 10px;
+  padding-right: 80px;
+  display: flex;
+  flex-direction: column;
+ 
+  h1 {
+    font-size: 72px;
+    line-height: 0.92;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: $color-texto;
+    margin-bottom: 0;
+  }
+ 
+  .contact-divider {
+    width: 100%;
+    max-width: 600px;
+    height: 1px;
+    background: $color-borde;
+    margin: 48px 0 40px;
+  }
+ 
+  .contact-email {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: $color-texto;
+    text-decoration: none;
+    @include transition;
+ 
+    &:hover {
+      color: $color-parrafo;
+    }
+  }
+}
+ 
+// ── Columna derecha ───────────────────────────────────
+.contact-right {
+  padding-left: 0;
+}
+ 
+// ── Formulario ────────────────────────────────────────
+.contact-form-wrap {
+  background: #EEF3FA; // azul muy claro, alineado con $color-borde
+  padding: 40px 40px 32px;
+  margin-bottom: 0;
+}
+ 
+.contact-field {
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba($color-parrafo, 0.15);
+  margin-bottom: 20px;
+ 
+  &:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+ 
+  label {
+    display: block;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $color-muted;
+    margin-bottom: 10px;
+  }
+ 
+  input,
+  textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: $fuente-principal;
+    font-size: 14px;
+    font-weight: 400;
+    color: $color-parrafo;
+    resize: none;
+    padding: 0;
+    line-height: 1.6;
+ 
+    &::placeholder {
+      color: rgba($color-parrafo, 0.45);
+    }
+  }
+ 
+  textarea {
+    min-height: 120px;
+  }
+}
+ 
+.contact-submit-row {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 40px 28px;
+  background: #EEF3FA;
+  margin-top: -1px; // fusiona con el form-wrap
+}
+ 
+.contact-submit {
+  background: none;
+  border: none;
+  font-family: $fuente-principal;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $color-parrafo;
+  cursor: pointer;
+  padding-bottom: 3px;
+  border-bottom: 1px solid $color-parrafo;
+  @include transition;
+ 
+  &:hover {
+    opacity: 0.6;
+  }
+}
+ 
+// ── Redes sociales ────────────────────────────────────
+.contact-socials {
+  background: #EEF3FA;
+  margin-top: 2px; // pequeño gap entre form y socials
+}
+ 
+.social-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  border-top: 1px solid rgba($color-parrafo, 0.12);
+  text-decoration: none;
+  @include transition;
+ 
+  &:last-child {
+    border-bottom: 1px solid rgba($color-parrafo, 0.12);
+  }
+ 
+  &:hover {
+    background: rgba($color-parrafo, 0.04);
+    .social-arrow {
+      transform: translateX(4px);
+    }
+  }
+ 
+  .social-name {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: $color-texto;
+  }
+ 
+  .social-arrow {
+    font-size: 16px;
+    color: $color-muted;
+    @include transition(transform, 0.25s);
+  }
+}
+ 
+// ── Nav link activo ───────────────────────────────────
+.nav .nav-active {
+  color: $color-texto !important;
+  border-bottom-color: currentColor !important;
+}
+ 
+// ── MEDIA QUERIES ─────────────────────────────────────
+@include respond-to(lg) {
+  .contact-hero {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+  .contact-left {
+    padding-right: 48px;
+    h1 { font-size: 58px; }
+  }
+}
+ 
+@include respond-to(md) {
+  .contact-hero {
+    padding-left: 48px;
+    padding-right: 48px;
+    min-height: auto;
+  }
+  .contact-left {
+    padding-right: 0;
+    margin-bottom: 60px;
+    h1 { font-size: 52px; }
+    .contact-divider { max-width: 100%; }
+  }
+}
+ 
+@include respond-to(sm) {
+  .contact-hero {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 48px;
+  }
+  .contact-left {
+    h1 { font-size: 40px; }
+    .contact-email { font-size: 18px; }
+  }
+  .contact-form-wrap {
+    padding: 28px 24px 24px;
+  }
+  .contact-submit-row {
+    padding: 16px 24px 20px;
+  }
+  .social-row {
+    padding: 16px 24px;
+  }
+}
+ 

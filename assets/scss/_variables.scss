@@ -1,0 +1,30 @@
+// Fuente global
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+// Variables Sass (nombres intuitivos)
+$color-fondo: #FBFBFF;
+$color-texto: #241815;
+$color-parrafo: #021A56;
+$color-muted: rgba(36, 24, 21, 0.5);
+$color-borde: #BFD4EF;
+$color-azul: #021A56;
+$color-blanco: #FFFFFF;
+$fuente-principal: 'Inter', sans-serif;
+
+// Breakpoints para mixins
+$breakpoint-lg: 1200px;
+$breakpoint-md: 992px;
+$breakpoint-sm: 768px;
+$breakpoint-xs: 576px;
+
+// Variables CSS (se mantienen los nombres originales para no romper nada)
+:root {
+  --bg: #{$color-fondo};
+  --text: #{$color-texto};
+  --paragraph: #{$color-parrafo};
+  --muted: #{$color-muted};
+  --border: #{$color-borde};
+  --navy: #{$color-azul};
+  --white: #{$color-blanco};
+  --font-sans: #{$fuente-principal};
+}

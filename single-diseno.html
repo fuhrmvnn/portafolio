@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JF / Portfolio — Rediseño UX/UI Plataforma Educativa</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/scss/mi-estilo.css">
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- HEADER -->
+  <header class="nav">
+    <div class="nav-logo">JF / PORTFOLIO</div>
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="proyectos.html" class="nav-active">TRABAJOS</a>
+      <a href="contacto.html">CONTACTO</a>
+    </nav>
+  </header>
+
+  <main class="container-fluid px-0 overflow-hidden">
+
+    <!-- ── HERO IMAGE ── -->
+    <section class="sd-hero reveal">
+      <div class="sd-hero-img">
+        <img src="assets/img/computador.svg" alt="Rediseño UX/UI Plataforma Educativa"
+          onerror="this.style.display='none';this.parentNode.innerHTML='<div class=\'img-placeholder\'>HERO IMAGE</div>'">
+      </div>
+    </section>
+
+    <!-- ── INTRO: TÍTULO + DESC ── -->
+    <section class="sd-intro">
+      <div class="row g-5 align-items-start">
+        <div class="col-lg-5 sd-intro-left">
+          <h1 class="reveal">REDISEÑO UX/UI PARA<br>PLATAFORMA<br>EDUCATIVA</h1>
+        </div>
+        <div class="col-lg-7 sd-intro-right reveal reveal-delay-2">
+          <p>Diseño y desarrollo de una plataforma educativa enfocada en capacitaciones digitales, gestión de estudiantes y automatización de procesos internos.</p>
+          <p>El sistema fue construido para ofrecer una experiencia clara, escalable y adaptable para empresas, instituciones y programas de formación online.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DIVIDER ── -->
+    <div class="sd-divider"></div>
+
+    <!-- ── BODY: META + CONTENIDO ── -->
+    <section class="sd-body">
+      <div class="row g-0">
+
+        <!-- Meta lateral -->
+        <aside class="col-lg-3 sd-meta reveal">
+          <div class="meta-item">
+            <span class="meta-label">PROYECTO</span>
+            <p class="meta-value">Plataforma eLearning</p>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">SERVICIOS</span>
+            <p class="meta-value">Rediseño, UX/UI Design<br>Frontend</p>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">AÑO</span>
+            <p class="meta-value">2026</p>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">TECNOLOGÍAS</span>
+            <p class="meta-value">HTML / CSS / JS<br>PHP / Wordpress</p>
+          </div>
+        </aside>
+
+        <!-- Contenido -->
+        <div class="col-lg-9 sd-content">
+
+          <!-- ── BLOQUE 1: CONTEXTO ── -->
+          <div class="sd-block reveal">
+            <div class="row g-5 align-items-start sd-block-header">
+              <div class="col-lg-4">
+                <h2 class="sd-block-title">CONTEXTO DEL<br>PROYECTO</h2>
+              </div>
+              <div class="col-lg-8">
+                <p>El proyecto buscaba reorganizar una plataforma de capacitación digital con problemas de navegación, estructura de contenido y experiencia responsive.</p>
+                <p>El sistema fue pensado para estudiantes, administradores y empresas, priorizando claridad visual y facilidad de uso.</p>
+              </div>
+            </div>
+
+            <!-- Antes / Después -->
+            <div class="sd-before-after row g-3 reveal reveal-delay-1">
+              <div class="col-md-6">
+                <div class="ba-img-wrap">
+                  <img src="assets/img/sd-antes.jpg" alt="Antes"
+                    onerror="this.style.display='none';this.parentNode.innerHTML='<div class=\'img-placeholder\'>ANTES</div>'">
+                </div>
+                <div class="ba-caption">
+                  <span class="ba-tag">ANTES</span>
+                  <p>Interfaz sobrecargada y navegación difícil de escanear.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="ba-img-wrap">
+                  <img src="assets/img/sd-despues.jpg" alt="Después"
+                    onerror="this.style.display='none';this.parentNode.innerHTML='<div class=\'img-placeholder\'>DESPUÉS</div>'">
+                </div>
+                <div class="ba-caption">
+                  <span class="ba-tag">DESPUÉS</span>
+                  <p>Sistema modular con jerarquías visuales mucho más claras.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── BLOQUE 2: PROBLEMAS DETECTADOS ── -->
+          <div class="sd-block reveal">
+            <div class="row g-5 align-items-start sd-block-header">
+              <div class="col-lg-4">
+                <h2 class="sd-block-title">PROBLEMAS<br>DETECTADOS</h2>
+              </div>
+              <div class="col-lg-8">
+                <p>La plataforma había crecido sin un sistema visual consistente, generando fricción en navegación, lectura y experiencia responsive.</p>
+              </div>
+            </div>
+
+            <!-- Imagen + Lista de problemas -->
+            <div class="row g-5 align-items-start sd-problems reveal reveal-delay-1">
+              <div class="col-md-5">
+                <div class="sd-img-wrap">
+                  <img src="assets/img/sd-problemas.jpg" alt="Problemas detectados"
+                    onerror="this.style.display='none';this.parentNode.innerHTML='<div class=\'img-placeholder\'>IMAGEN</div>'">
+                </div>
+              </div>
+              <div class="col-md-7">
+                <ul class="sd-problem-list">
+                  <li>
+                    <span class="problem-title">Navegación compleja y demasiados niveles visuales.</span>
+                    <p>La estructura acumulaba demasiados niveles y accesos secundarios, dificultando encontrar contenido rápidamente.</p>
+                  </li>
+                  <li>
+                    <span class="problem-title">Componentes visuales sin sistema ni consistencia.</span>
+                    <p>Tipografías, tamaños y componentes competían entre sí, reduciendo claridad visual dentro del sistema.</p>
+                  </li>
+                  <li>
+                    <span class="problem-title">Experiencia móvil limitada y poco optimizada.</span>
+                    <p>No existían reglas visuales unificadas entre dashboards, cursos y módulos internos.</p>
+                  </li>
+                  <li>
+                    <span class="problem-title">Mala legibilidad y jerarquía tipográfica inconsistente.</span>
+                    <p>La interfaz no respondía correctamente en pantallas pequeñas, afectando lectura y navegación táctil.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── BLOQUE 3: SISTEMA VISUAL ── -->
+          <div class="sd-block reveal">
+            <div class="row g-5 align-items-start sd-block-header">
+              <div class="col-lg-4">
+                <h2 class="sd-block-title">SISTEMA<br>VISUAL</h2>
+              </div>
+              <div class="col-lg-8">
+                <p>El nuevo sistema fue diseñado para mantener consistencia entre dashboards, cursos, perfiles y vistas responsive.</p>
+              </div>
+            </div>
+
+            <!-- Grid de 3 imágenes + features -->
+            <div class="sd-visual-grid row g-3 reveal reveal-delay-1">
+              <div class="col-md-4">
+                <div class="vg-img-wrap">
+                  <img src="assets/img/sd-visual-1.jpg" alt="Arquitectura simplificada"
+                    onerror="this.style.display='none';this.parentNode.innerHTML='<div class=\'img-placeholder\'>VISUAL 01</div>'">
+                </div>
+                <div class="vg-info">
+                  <span class="vg-title">ARQUITECTURA SIMPLIFICADA</span>
+                  <span class="vg-tag">NAVEGACIÓN</span>
+                  <p>Reorganización de flujos y reducción de pasos innecesarios.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="vg-img-wrap">
+                  <img src="assets/img/sd-visual-2.jpg" alt="Componentes"
+                    onerror="this.style.display='none';this.parentNode.innerHTML='<div class=\'img-placeholder\'>VISUAL 02</div>'">
+                </div>
+                <div class="vg-info">
+                  <span class="vg-title">COMPONENTES</span>
+                  <span class="vg-tag">EL SISTEM.</span>
+                  <p>Construcción de un sistema visual modular y reutilizable.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="vg-img-wrap">
+                  <img src="assets/img/sd-visual-3.jpg" alt="Experiencia adaptable"
+                    onerror="this.style.display='none';this.parentNode.innerHTML='<div class=\'img-placeholder\'>VISUAL 03</div>'">
+                </div>
+                <div class="vg-info">
+                  <span class="vg-title">EXPERIENCIA ADAPTABLE</span>
+                  <span class="vg-tag">RESPONSIVE</span>
+                  <p>Optimización visual y funcional para múltiples dispositivos.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── BLOQUE 4: DECISIONES ── -->
+          <div class="sd-block sd-block--last reveal">
+            <div class="row g-5 align-items-start sd-block-header">
+              <div class="col-lg-4">
+                <h2 class="sd-block-title">DECISIONES</h2>
+              </div>
+              <div class="col-lg-8">
+                <p>Cada cambio fue pensado para reducir fricción y facilitar interacción dentro de flujos educativos complejos.</p>
+              </div>
+            </div>
+
+            <!-- Grid 2x2 de decisiones -->
+            <div class="sd-decisions-grid row g-0 reveal reveal-delay-1">
+              <div class="col-md-6 decision-item">
+                <span class="decision-category">NAVEGACIÓN</span>
+                <span class="decision-title">MENOS NIVELES VISUALES</span>
+                <p>Reorganización de navegación y contenido para reducir saturación y mejorar escaneo visual.</p>
+              </div>
+              <div class="col-md-6 decision-item">
+                <span class="decision-category">EL SISTEM.</span>
+                <span class="decision-title">UNIFICACIÓN DE PATRONES UI</span>
+                <p>Reorganización de navegación y contenido para reducir saturación y mejorar escaneo visual.</p>
+              </div>
+              <div class="col-md-6 decision-item decision-item--bottom">
+                <span class="decision-category">TIPOGRAFÍA</span>
+                <span class="decision-title">JERARQUÍA MÁS CLARA</span>
+                <p>Reorganización de navegación y contenido para reducir saturación y mejorar escaneo visual.</p>
+              </div>
+              <div class="col-md-6 decision-item decision-item--bottom">
+                <span class="decision-category">RESPONSIVE</span>
+                <span class="decision-title">NAVEGACIÓN OPTIMIZADA PARA MOBILE</span>
+                <p>Reorganización de navegación y contenido para reducir saturación y mejorar escaneo visual.</p>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /sd-content -->
+      </div>
+    </section>
+
+    <!-- ── SIGUIENTE PROYECTO ── -->
+    <section class="sd-next reveal">
+      <a href="single-proyecto.html" class="sd-next-link">
+        <div class="sd-next-img">
+          <img src="assets/img/single-next.jpg" alt="Siguiente proyecto"
+            onerror="this.style.display='none';this.parentNode.innerHTML='<div class=\'img-placeholder\'></div>'">
+        </div>
+        <div class="sd-next-info">
+          <span class="next-label">SIGUIENTE PROYECTO</span>
+          <h3 class="next-title">REDISEÑO<br>ECOMMERCE</h3>
+          <span class="next-cta">VER PROYECTO →</span>
+        </div>
+      </a>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner container-fluid px-0">
+      <div class="row g-5 align-items-end">
+        <div class="col-md-6">
+          <h2 class="reveal">HABLEMOS<br>DE TU PROYECTO</h2>
+        </div>
+        <div class="col-md-6 footer-right reveal reveal-delay-2">
+          <p>Cada proyecto busca resolver problemas visuales y funcionales a través de sistemas claros, interacción y una dirección visual consistente.</p>
+          <div class="footer-contact-row">
+            <span class="footer-email">joji.oyaneder@gmail.com</span>
+            <a href="mailto:joji.oyaneder@gmail.com" class="footer-btn">CONTACTAR</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

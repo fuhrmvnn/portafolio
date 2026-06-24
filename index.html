@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JF / Portfolio — Josefa Oyaneder Jara</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Tu CSS personalizado (después de Bootstrap para sobrescribir) -->
+  <link rel="stylesheet" href="assets/scss/mi-estilo.css">
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- HEADER -->
+  <header class="nav">
+    <div class="nav-logo">JF / PORTFOLIO</div>
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="proyectos.html">TRABAJOS</a>
+      <a href="contacto.html">CONTACTO</a>
+    </nav>
+  </header>
+
+  <main class="container-fluid px-0 overflow-hidden">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="row gx-5">
+        <div class="col-lg-7 col-xl-7 hero-left">
+          <img src="assets/img/iconos/sentado.svg" alt="" class="hero-icon">
+          <h1 class="reveal">DISEÑO Y DESARROLLO EXPERIENCIAS DIGITALES PROFESIONALES</h1>
+        </div>
+        <div class="col-lg-5 col-xl-5 hero-right reveal reveal-delay-2">
+          <p>Diseñador y desarrollador frontend enfocado en interfaces modernas, sistemas visuales y experiencias digitales centradas en claridad y detalle.</p>
+          <p>Actualmente trabajando en proyectos web, branding digital e interfaces interactivas para productos y marcas.</p>
+          <h2>JOSEFA OYANEDER JARA</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED -->
+    <section class="featured reveal">
+      <div class="featured-img-wrap">
+        <img src="assets/img/hero.jpg" alt="Proyecto Destacado"
+          onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\'>IMAGEN PRINCIPAL</div>'">
+        <span class="featured-label">PROYECTO DESTACADO | 2026</span>
+      </div>
+    </section>
+
+    <!-- INFO GRID (4 columnas) -->
+    <section class="info-grid">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3 info-grid-item reveal">
+          <span>ESPECIALIDAD</span>
+          <p>Desarrollo y Diseño Web · DUOC UC</p>
+        </div>
+        <div class="col-md-6 col-lg-3 info-grid-item reveal reveal-delay-1">
+          <span>HERRAMIENTAS</span>
+          <p>Figma, HTML, CSS, JavaScript, WordPress y SCSS.</p>
+        </div>
+        <div class="col-md-6 col-lg-3 info-grid-item reveal reveal-delay-2">
+          <span>EXPERIENCIA</span>
+          <p>Landing Pages, Ecommerce, LMS y productos digitales.</p>
+        </div>
+        <div class="col-md-6 col-lg-3 info-grid-item reveal reveal-delay-3">
+          <span>UBICACIÓN</span>
+          <p>Chile · Disponible para trabajo remoto.</p>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+  <div class="about-container">
+    <div class="about-image">
+      <img src="assets/img/about.jpg" alt="Josefa Oyaneder"
+        onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\'>FOTOGRAFÍA</div>'">
+    </div>
+    <div class="about-content reveal">
+       <div class="about-tag-wrapper">
+         <span class="about-tag">SOBRE MÍ</span>
+         <img src="assets/img/iconos/usuario.svg" alt=""        class="about-icon">
+       </div>
+      <h2>DISEÑADOR Y DESARROLLADOR FRONTEND ENFOCADO EN CREAR PRODUCTOS DIGITALES FUNCIONALES Y VISUALMENTE SÓLIDOS.</h2>
+      <p>Trabajo principalmente en diseño de interfaces, desarrollo frontend y dirección visual para experiencias digitales modernas. Me enfoco en construir sitios claros, rápidos y con una identidad visual consistente.</p>
+      <div class="about-meta">
+        <div class="about-meta-item">
+          <span>ENFOQUE</span>
+          <p>UX/UI · Frontend</p>
+        </div>
+        <div class="about-meta-item">
+          <span>TECNOLOGÍAS</span>
+          <p>HTML · CSS · JavaScript · WordPress · SCSS</p>
+        </div>
+        <div class="about-meta-item">
+          <span>TRABAJO</span>
+          <p>Freelance y colaboraciones remotas.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- PROJECTS -->
+    <section class="projects">
+      <div class="projects-header reveal">
+       <div class="projects-title-wrapper">
+         <img src="assets/img/iconos/archivo.svg" alt=""      class="projects-icon" width="32" height="32">
+         <h2>TRABAJOS<br>SELECCIONADOS</h2>
+       </div>
+       <span class="year-range">2024 — 2026</span>
+      </div>
+
+      <!-- PROYECTO 01 (large) -->
+      <article class="project project-large reveal">
+        <div class="row g-5 align-items-center">
+          <div class="col-md-5 project-info">
+            <span class="project-num">(01)</span>
+            <h3>PLATAFORMA ELEARNING PROFESIONAL</h3>
+            <p>Rediseño y desarrollo frontend para mejorar claridad visual, navegación y conversión.</p>
+            <p>Sistema responsive enfocado en experiencia de usuario, estructura limpia y componentes reutilizables.</p>
+            <div class="project-tags">
+              <span>FRONTEND</span>
+              <span>UX/UI</span>
+              <span>DESARROLLO WEB</span>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="project-image-wrap project-gallery">
+              <img src="assets/img/project-1.jpg" alt="Proyecto eLearning 1">
+            </div>
+          </div>
+        </div>
+      </article>
+<!-- PROYECTO 02 (small) -->
+<article class="project project-small reveal">
+  <div class="row g-4 align-items-center">
+    <div class="col-md-5">
+      <div class="project-image-wrap small-image">
+        <img src="assets/img/project-2.jpg" alt="Proyecto Estudio Creativo"
+          onerror="this.style.display='none';this.parentNode.innerHTML='<div class=\'img-placeholder\'>PROYECTO 02</div>'">
+      </div>
+    </div>
+    <div class="col-md-7 project-info">
+      <span class="project-num">(02)</span>
+      <h3>SITIO WEB PARA ESTUDIO CREATIVO</h3>
+      <p>Desarrollo visual orientado a branding digital, interacción y dirección de arte minimalista.</p>
+      <a href="#" class="project-link">VER PROYECTO →</a>
+    </div>
+  </div>
+</article>
+    </section>
+
+    <!-- FOCUS (2 columnas) -->
+    <section class="focus">
+      <div class="row g-5">
+<div class="col-md-6 focus-left reveal">
+  <span class="focus-tag">ENFOQUE DE TRABAJO</span>
+  <img src="assets/img/iconos/objetivo.svg" alt="" class="focus-icon">
+  <h2>CADA PROYECTO COMBINA ESTRUCTURA, EXPERIENCIA DE USUARIO Y DIRECCIÓN VISUAL PARA CREAR PRODUCTOS DIGITALES CLAROS Y FUNCIONALES.</h2>
+</div>
+        <div class="col-md-6 focus-right">
+          <div class="focus-item reveal">
+            <span class="focus-item-num">01</span>
+            <div class="focus-item-content">
+              <h4>ESTRUCTURA</h4>
+              <p>Organización visual clara y sistemas consistentes para mejorar navegación y comprensión.</p>
+            </div>
+          </div>
+          <div class="focus-item reveal reveal-delay-1">
+            <span class="focus-item-num">02</span>
+            <div class="focus-item-content">
+              <h4>DISEÑO VISUAL</h4>
+              <p>Interfaces enfocadas en jerarquía, tipografía y composición.</p>
+            </div>
+          </div>
+          <div class="focus-item reveal reveal-delay-2">
+            <span class="focus-item-num">03</span>
+            <div class="focus-item-content">
+              <h4>DESARROLLO</h4>
+              <p>Implementación frontend moderna optimizada para rendimiento y adaptabilidad.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner container-fluid px-0">
+      <div class="row g-5 align-items-end">
+        <div class="col-md-6">
+          <h2 class="reveal">HABLEMOS<br>DE TU PROYECTO</h2>
+        </div>
+        <div class="col-md-6 footer-right reveal reveal-delay-2">
+          <p>Cada proyecto busca resolver problemas visuales y funcionales a través de sistemas claros, interacción y una dirección visual consistente.</p>
+          <div class="footer-contact-row">
+            <span class="footer-email">jos.oyaneder@duocuc.cl</span>
+            <a href="mailto:jos.oyaneder@duocuc.cl" class="footer-btn">CONTACTAR</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS + Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Tu script personalizado -->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

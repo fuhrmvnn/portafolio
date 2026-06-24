@@ -1,0 +1,19 @@
+@import 'variables';
+
+// Mixin para media queries responsive
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == lg {
+    @media (max-width: $breakpoint-lg) { @content; }
+  } @else if $breakpoint == md {
+    @media (max-width: $breakpoint-md) { @content; }
+  } @else if $breakpoint == sm {
+    @media (max-width: $breakpoint-sm) { @content; }
+  } @else if $breakpoint == xs {
+    @media (max-width: $breakpoint-xs) { @content; }
+  }
+}
+
+// Mixin para transiciones rápidas
+@mixin transition($property: all, $duration: 0.25s, $ease: ease) {
+  transition: $property $duration $ease;
+}

@@ -1,0 +1,426 @@
+@import 'variables';
+@import 'mixins';
+
+/* ----------------------------------------
+   ESTILOS EXCLUSIVOS DE SINGLE-DISENO
+---------------------------------------- */
+
+// ── Hero ──────────────────────────────────────────────
+.sd-hero {
+  .sd-hero-img {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    background: #e8e4de;
+
+    img, svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+}
+
+// ── Intro ─────────────────────────────────────────────
+.sd-intro {
+  padding: 64px 90px 56px;
+
+  .sd-intro-left h1 {
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 0.93;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: $color-texto;
+  }
+
+  .sd-intro-right {
+    padding-top: 10px;
+    p {
+      max-width: 580px;
+      color: $color-parrafo;
+      margin-bottom: 14px;
+      &:last-of-type { margin-bottom: 0; }
+    }
+  }
+}
+
+// ── Divisor ───────────────────────────────────────────
+.sd-divider {
+  margin: 0 90px;
+  height: 1px;
+  background: $color-borde;
+}
+
+// ── Body (meta + content) ─────────────────────────────
+.sd-body {
+  padding: 0 90px;
+}
+
+// ── Meta ──────────────────────────────────────────────
+.sd-meta {
+  padding: 60px 48px 60px 0;
+  border-right: 1px solid $color-borde;
+
+  .meta-item {
+    margin-bottom: 32px;
+    &:last-child { margin-bottom: 0; }
+  }
+  .meta-label {
+    display: block;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $color-muted;
+    margin-bottom: 8px;
+  }
+  .meta-value {
+    font-size: 13px;
+    line-height: 1.75;
+    color: $color-parrafo;
+    margin: 0;
+  }
+}
+
+// ── Contenido ─────────────────────────────────────────
+.sd-content {
+  padding: 60px 0 60px 64px;
+}
+
+// ── Bloque genérico ───────────────────────────────────
+.sd-block {
+  margin-bottom: 80px;
+  padding-bottom: 80px;
+  border-bottom: 1px solid $color-borde;
+
+  &.sd-block--last {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .sd-block-header {
+    margin-bottom: 40px;
+  }
+
+  .sd-block-title {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: $color-texto;
+    margin: 0;
+  }
+
+  p {
+    color: $color-parrafo;
+    margin-bottom: 14px;
+    &:last-of-type { margin-bottom: 0; }
+  }
+}
+
+// ── Antes / Después ───────────────────────────────────
+.sd-before-after {
+  .ba-img-wrap {
+    overflow: hidden;
+    background: #d8d3cb;
+    aspect-ratio: 16 / 10;
+    margin-bottom: 14px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      @include transition(transform, 0.6s);
+    }
+    &:hover img { transform: scale(1.03); }
+  }
+
+  .ba-caption {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+  }
+
+  .ba-tag {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $color-muted;
+    flex-shrink: 0;
+  }
+
+  p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: $color-parrafo;
+    margin: 0;
+  }
+}
+
+// ── Lista de problemas ────────────────────────────────
+.sd-img-wrap {
+  overflow: hidden;
+  background: #d8d3cb;
+  aspect-ratio: 4 / 3;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.sd-problem-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    padding: 20px 0;
+    border-bottom: 1px solid $color-borde;
+
+    &:first-child { border-top: 1px solid $color-borde; }
+
+    .problem-title {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      color: $color-texto;
+      margin-bottom: 6px;
+      letter-spacing: -0.01em;
+    }
+
+    p {
+      font-size: 13px;
+      line-height: 1.65;
+      color: $color-parrafo;
+      margin: 0;
+    }
+  }
+}
+
+// ── Sistema visual (3 col con imagen + info) ──────────
+.sd-visual-grid {
+  .vg-img-wrap {
+    overflow: hidden;
+    background: #d8d3cb;
+    aspect-ratio: 4 / 3;
+    margin-bottom: 16px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      @include transition(transform, 0.6s);
+    }
+    &:hover img { transform: scale(1.04); }
+  }
+
+  .vg-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .vg-title {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    color: $color-texto;
+  }
+
+  .vg-tag {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $color-muted;
+    margin-bottom: 6px;
+  }
+
+  p {
+    font-size: 13px;
+    line-height: 1.65;
+    color: $color-parrafo;
+    margin: 0;
+  }
+}
+
+// ── Decisiones (grid 2x2) ─────────────────────────────
+.sd-decisions-grid {
+  border-top: 1px solid $color-borde;
+
+  .decision-item {
+    padding: 28px 28px 28px 0;
+    border-right: 1px solid $color-borde;
+    border-bottom: 1px solid $color-borde;
+
+    // columna derecha: sin borde derecho, con padding izquierdo
+    &:nth-child(even) {
+      border-right: none;
+      padding-left: 28px;
+      padding-right: 0;
+    }
+
+    // fila inferior: sin borde bottom
+    &.decision-item--bottom {
+      border-bottom: none;
+    }
+
+    .decision-category {
+      display: block;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: $color-muted;
+      margin-bottom: 6px;
+    }
+
+    .decision-title {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: -0.01em;
+      color: $color-texto;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 13px;
+      line-height: 1.65;
+      color: $color-parrafo;
+      margin: 0;
+    }
+  }
+}
+
+// ── Siguiente proyecto ────────────────────────────────
+.sd-next {
+  margin: 80px 90px 0;
+  border-top: 1px solid $color-borde;
+  padding-top: 48px;
+
+  .sd-next-link {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    text-decoration: none;
+
+    &:hover {
+      .sd-next-img img { transform: scale(1.04); }
+      .next-cta { letter-spacing: 0.13em; }
+    }
+  }
+
+  .sd-next-img {
+    width: 160px;
+    height: 100px;
+    flex-shrink: 0;
+    overflow: hidden;
+    background: #d8d3cb;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      @include transition(transform, 0.6s);
+    }
+  }
+
+  .sd-next-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .next-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $color-muted;
+  }
+
+  .next-title {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 0.95;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: $color-texto;
+    margin: 0;
+  }
+
+  .next-cta {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $color-parrafo;
+    @include transition(letter-spacing, 0.3s);
+  }
+}
+
+// ── Nav activo ────────────────────────────────────────
+.nav .nav-active {
+  color: $color-texto !important;
+  border-bottom-color: currentColor !important;
+}
+
+// ── MEDIA QUERIES ─────────────────────────────────────
+@include respond-to(lg) {
+  .sd-intro, .sd-body, .sd-next { padding-left: 48px; padding-right: 48px; }
+  .sd-divider { margin-left: 48px; margin-right: 48px; }
+  .sd-hero .sd-hero-img { height: 420px; }
+  .sd-intro .sd-intro-left h1 { font-size: 46px; }
+}
+
+@include respond-to(md) {
+  .sd-intro, .sd-body, .sd-next { padding-left: 48px; padding-right: 48px; }
+  .sd-divider { margin-left: 48px; margin-right: 48px; }
+
+  .sd-meta {
+    border-right: none;
+    border-bottom: 1px solid $color-borde;
+    padding: 48px 0 36px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    .meta-item { margin-bottom: 0; flex: 1; min-width: 130px; }
+  }
+
+  .sd-content { padding: 48px 0; }
+
+  .sd-decisions-grid .decision-item {
+    &:nth-child(even) { padding-left: 28px; }
+  }
+}
+
+@include respond-to(sm) {
+  .sd-intro, .sd-body, .sd-next { padding-left: 24px; padding-right: 24px; }
+  .sd-divider { margin-left: 24px; margin-right: 24px; }
+  .sd-hero .sd-hero-img { height: 260px; }
+  .sd-intro { padding-top: 40px; padding-bottom: 36px; }
+  .sd-intro .sd-intro-left h1 { font-size: 34px; }
+  .sd-block-title { font-size: 20px !important; }
+
+  .sd-decisions-grid .decision-item {
+    border-right: none !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+    &.decision-item--bottom { border-bottom: 1px solid $color-borde; }
+    &:last-child { border-bottom: none; }
+  }
+
+  .sd-next .next-title { font-size: 26px; }
+  .sd-next .sd-next-img { width: 110px; height: 72px; }
+}

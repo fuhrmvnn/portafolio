@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JF / Portfolio — Contacto</title>
+ 
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/scss/mi-estilo.css">
+  <link rel="stylesheet" href="assets/scss/contacto.css">
+</head>
+<body>
+ 
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+ 
+  <!-- HEADER -->
+  <header class="nav">
+    <div class="nav-logo">JF / PORTFOLIO</div>
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="proyectos.html">TRABAJOS</a>
+      <a href="contacto.html" class="nav-active">CONTACTO</a>
+    </nav>
+  </header>
+ 
+  <main class="container-fluid px-0 overflow-hidden">
+ 
+    <!-- HERO + FORMULARIO -->
+    <section class="contact-hero">
+      <div class="row g-0 align-items-start">
+ 
+        <!-- Columna izquierda: título + email -->
+        <div class="col-lg-7 contact-left">
+          <h1 class="reveal">DISPONIBLE<br>PARA<br>PROYECTOS,<br>CONTRATACIONES<br>Y DESARROLLO.</h1>
+          <div class="contact-divider reveal reveal-delay-2"></div>
+          <a href="mailto:joji.oyaneder@gmail.com" class="contact-email reveal reveal-delay-3">
+            joji.oyaneder@gmail.com
+          </a>
+        </div>
+ 
+        <!-- Columna derecha: formulario + redes -->
+        <div class="col-lg-5 contact-right reveal reveal-delay-1">
+ 
+          <!-- Formulario -->
+          <div class="contact-form-wrap">
+            <div class="contact-field">
+              <label for="nombre">NOMBRE</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" autocomplete="off">
+            </div>
+            <div class="contact-field">
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" autocomplete="off">
+            </div>
+            <div class="contact-field contact-field--textarea">
+              <label for="mensaje">PROYECTO / MENSAJE</label>
+              <textarea id="mensaje" name="mensaje" placeholder="Cuéntame sobre tu proyecto, idea o colaboración." rows="5"></textarea>
+            </div>
+            <div class="contact-submit-row">
+              <button type="button" class="contact-submit" id="contact-submit">ENVIAR MENSAJE</button>
+            </div>
+          </div>
+ 
+          <!-- Redes sociales -->
+          <div class="contact-socials">
+            <a href="#" class="social-row" target="_blank" rel="noopener">
+              <span class="social-name">BEHANCE</span>
+              <span class="social-arrow">→</span>
+            </a>
+            <a href="#" class="social-row" target="_blank" rel="noopener">
+              <span class="social-name">GITHUB</span>
+              <span class="social-arrow">→</span>
+            </a>
+            <a href="#" class="social-row" target="_blank" rel="noopener">
+              <span class="social-name">LINKEDIN</span>
+              <span class="social-arrow">→</span>
+            </a>
+          </div>
+ 
+        </div>
+      </div>
+    </section>
+ 
+  </main>
+ 
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner container-fluid px-0">
+      <div class="row g-5 align-items-end">
+        <div class="col-md-6">
+          <h2 class="reveal">HABLEMOS<br>DE TU PROYECTO</h2>
+        </div>
+        <div class="col-md-6 footer-right reveal reveal-delay-2">
+          <p>Cada proyecto busca resolver problemas visuales y funcionales a través de sistemas claros, interacción y una dirección visual consistente.</p>
+          <div class="footer-contact-row">
+            <span class="footer-email">joji.oyaneder@gmail.com</span>
+            <a href="mailto:joji.oyaneder@gmail.com" class="footer-btn">CONTACTAR</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+ 
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/contacto.js"></script>
+</body>
+</html>
