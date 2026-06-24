@@ -1743,6 +1743,7 @@ footer .footer-btn:hover {
 
 /* ----------------------------------------
    ESTILOS EXCLUSIVOS DE SINGLE-DISENO
+   (Sin línea vertical separadora en la meta)
 ---------------------------------------- */
 .sd-hero .sd-hero-img {
   width: 100%;
@@ -1793,7 +1794,6 @@ footer .footer-btn:hover {
 
 .sd-meta {
   padding: 60px 48px 60px 0;
-  border-right: 1px solid #BFD4EF;
 }
 .sd-meta .meta-item {
   margin-bottom: 32px;
@@ -1906,10 +1906,12 @@ footer .footer-btn:hover {
 }
 .sd-problem-list li {
   padding: 20px 0;
-  border-bottom: 1px solid #BFD4EF;
 }
 .sd-problem-list li:first-child {
-  border-top: 1px solid #BFD4EF;
+  padding-top: 0;
+}
+.sd-problem-list li:last-child {
+  padding-bottom: 0;
 }
 .sd-problem-list li .problem-title {
   display: block;
@@ -1969,21 +1971,12 @@ footer .footer-btn:hover {
   margin: 0;
 }
 
-.sd-decisions-grid {
-  border-top: 1px solid #BFD4EF;
-}
 .sd-decisions-grid .decision-item {
   padding: 28px 28px 28px 0;
-  border-right: 1px solid #BFD4EF;
-  border-bottom: 1px solid #BFD4EF;
 }
 .sd-decisions-grid .decision-item:nth-child(even) {
-  border-right: none;
   padding-left: 28px;
   padding-right: 0;
-}
-.sd-decisions-grid .decision-item.decision-item--bottom {
-  border-bottom: none;
 }
 .sd-decisions-grid .decision-item .decision-category {
   display: block;
@@ -2102,7 +2095,6 @@ footer .footer-btn:hover {
     margin-right: 48px;
   }
   .sd-meta {
-    border-right: none;
     border-bottom: 1px solid #BFD4EF;
     padding: 48px 0 36px;
     display: flex;
@@ -2144,15 +2136,10 @@ footer .footer-btn:hover {
     font-size: 20px !important;
   }
   .sd-decisions-grid .decision-item {
-    border-right: none !important;
+    padding: 20px 0 !important;
+  }
+  .sd-decisions-grid .decision-item:nth-child(even) {
     padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-  .sd-decisions-grid .decision-item.decision-item--bottom {
-    border-bottom: 1px solid #BFD4EF;
-  }
-  .sd-decisions-grid .decision-item:last-child {
-    border-bottom: none;
   }
   .sd-next .next-title {
     font-size: 26px;

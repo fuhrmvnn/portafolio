@@ -3,6 +3,7 @@
 
 /* ----------------------------------------
    ESTILOS EXCLUSIVOS DE SINGLE-DISENO
+   (Sin línea vertical separadora en la meta)
 ---------------------------------------- */
 
 // ── Hero ──────────────────────────────────────────────
@@ -46,7 +47,7 @@
   }
 }
 
-// ── Divisor ───────────────────────────────────────────
+// ── Divisor (igual que .single-divider) ──────────────
 .sd-divider {
   margin: 0 90px;
   height: 1px;
@@ -58,10 +59,10 @@
   padding: 0 90px;
 }
 
-// ── Meta ──────────────────────────────────────────────
+// ── Meta (SIN borde derecho) ─────────────────────────
 .sd-meta {
   padding: 60px 48px 60px 0;
-  border-right: 1px solid $color-borde;
+  // Eliminado: border-right: 1px solid $color-borde;
 
   .meta-item {
     margin-bottom: 32px;
@@ -89,7 +90,7 @@
   padding: 60px 0 60px 64px;
 }
 
-// ── Bloque genérico ───────────────────────────────────
+// ── Bloque genérico (solo borde inferior) ────────────
 .sd-block {
   margin-bottom: 80px;
   padding-bottom: 80px;
@@ -162,7 +163,7 @@
   }
 }
 
-// ── Lista de problemas ────────────────────────────────
+// ── Lista de problemas (SIN bordes) ──────────────────
 .sd-img-wrap {
   overflow: hidden;
   background: #d8d3cb;
@@ -182,9 +183,9 @@
 
   li {
     padding: 20px 0;
-    border-bottom: 1px solid $color-borde;
-
-    &:first-child { border-top: 1px solid $color-borde; }
+    // Sin bordes
+    &:first-child { padding-top: 0; }
+    &:last-child { padding-bottom: 0; }
 
     .problem-title {
       display: block;
@@ -204,7 +205,7 @@
   }
 }
 
-// ── Sistema visual (3 col con imagen + info) ──────────
+// ── Sistema visual (3 col) ────────────────────────────
 .sd-visual-grid {
   .vg-img-wrap {
     overflow: hidden;
@@ -252,27 +253,16 @@
   }
 }
 
-// ── Decisiones (grid 2x2) ─────────────────────────────
+// ── Decisiones (SIN bordes de grid) ──────────────────
 .sd-decisions-grid {
-  border-top: 1px solid $color-borde;
-
+  // Sin border-top
   .decision-item {
     padding: 28px 28px 28px 0;
-    border-right: 1px solid $color-borde;
-    border-bottom: 1px solid $color-borde;
-
-    // columna derecha: sin borde derecho, con padding izquierdo
+    // Sin bordes
     &:nth-child(even) {
-      border-right: none;
       padding-left: 28px;
       padding-right: 0;
     }
-
-    // fila inferior: sin borde bottom
-    &.decision-item--bottom {
-      border-bottom: none;
-    }
-
     .decision-category {
       display: block;
       font-size: 11px;
@@ -282,7 +272,6 @@
       color: $color-muted;
       margin-bottom: 6px;
     }
-
     .decision-title {
       display: block;
       font-size: 13px;
@@ -292,7 +281,6 @@
       color: $color-texto;
       margin-bottom: 10px;
     }
-
     p {
       font-size: 13px;
       line-height: 1.65;
@@ -302,7 +290,7 @@
   }
 }
 
-// ── Siguiente proyecto ────────────────────────────────
+// ── Siguiente proyecto (igual que .single-next) ──────
 .sd-next {
   margin: 80px 90px 0;
   border-top: 1px solid $color-borde;
@@ -388,7 +376,7 @@
   .sd-divider { margin-left: 48px; margin-right: 48px; }
 
   .sd-meta {
-    border-right: none;
+    // En tablet, la meta pasa a tener borde inferior (como en single-proyecto)
     border-bottom: 1px solid $color-borde;
     padding: 48px 0 36px;
     display: flex;
@@ -413,12 +401,8 @@
   .sd-block-title { font-size: 20px !important; }
 
   .sd-decisions-grid .decision-item {
-    border-right: none !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-
-    &.decision-item--bottom { border-bottom: 1px solid $color-borde; }
-    &:last-child { border-bottom: none; }
+    padding: 20px 0 !important;
+    &:nth-child(even) { padding-left: 0 !important; }
   }
 
   .sd-next .next-title { font-size: 26px; }
